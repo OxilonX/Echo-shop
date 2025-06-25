@@ -16,10 +16,113 @@
   </head>
   <body>
     <header>
-      <nav></nav>
+      <div class="header-container">
+        <h1 class="logo">echo</h1>
+        <div class="search-bar-container">
+          <img
+            class="search-icon"
+            width="16"
+            height="16"
+            src="https://img.icons8.com/ios-filled/50/search--v1.png"
+            alt="search--v1"
+          />
+          <input class="search-bar" type="text" placeholder="search here..." />
+          <button class="search">search</button>
+        </div>
+        <nav class="navigation-bar">
+          <div class="language-selector">
+            <select class="language">
+              <option value="en">En</option>
+              <option value="fr">Fr</option>
+            </select>
+          </div>
+          <div class="nav-icons-cotainer">
+            <svg
+              class="phone-icon icons"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
+                  fill="#1C274C"
+                ></path>
+              </g>
+            </svg>
+            <svg
+              class="profile-icon icons"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.5 7.063C16.5 10.258 14.57 13 12 13c-2.572 0-4.5-2.742-4.5-5.938C7.5 3.868 9.16 2 12 2s4.5 1.867 4.5 5.063zM4.102 20.142C4.487 20.6 6.145 22 12 22c5.855 0 7.512-1.4 7.898-1.857a.416.416 0 0 0 .09-.317C19.9 18.944 19.106 15 12 15s-7.9 3.944-7.989 4.826a.416.416 0 0 0 .091.317z"
+                  fill="#000000"
+                ></path>
+              </g>
+            </svg>
+            <img
+              src="icons/cart-large-minimalistic-svgrepo-com.svg"
+              alt=""
+              class="cart-icon icons"
+            />
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="container"></div>
+      <section class="under-header">
+        <div class="container">
+          <div class="sec1-product-container">
+            <div class="sec1-product-info">
+              <h2 class="sec1-product-title">Hand-Poured Soy Candle</h2>
+              <p class="sec1-product-description">
+                Illuminate your space with our Artisanal Hand-Poured Soy Candle,
+                crafted from 100% natural soy wax for a clean, eco-friendly
+                burn. Infused with essential oils, it envelops your home in a
+                soothing aroma, transforming any atmosphere.
+              </p>
+              <div class="sec1-price-container">
+                <span class="sec1-product-price">$29.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="before-after-container">
+                <img
+                  src="icons/icons8-return-button-48.png"
+                  alt=""
+                  class="before"
+                />
+                <img
+                  src="icons/icons8-forward-button-48.png"
+                  alt=""
+                  class="after"
+                />
+              </div>
+            </div>
+            <img
+              src="icons/Soy Wax Candle - Cashmere.jpeg"
+              alt="Product Name"
+              class="sec1-product-image"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="scripts/main.js"></script>
