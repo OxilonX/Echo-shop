@@ -321,8 +321,7 @@ header {
   font-size: 2rem;
   font-weight: 800;
 }
-.sec1-product-title::before {
-}
+
 .sec1-product-description {
   font-size: 0.8rem;
   color: var(--ivory-darker);
@@ -533,7 +532,7 @@ header {
   color: var(--ivory-darker);
 }
 .customers-reviews {
-  padding: 100px 0;
+  padding-top: 100px;
   background-color: var(--ivory);
 }
 
@@ -608,4 +607,60 @@ header {
 }
 .rev-after:hover {
   transform: scale(1.1);
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  padding-top: 60px;
+  background-color: var(--ivory);
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--ivory));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--ivory));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: flex;
+  animation: 35s slide infinite linear;
+}
+.logo-item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 40px;
+}
+.logo-item span {
+  font-size: 1rem;
+  font-weight: 800;
 }
