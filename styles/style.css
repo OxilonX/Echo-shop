@@ -57,9 +57,12 @@ header {
   margin: auto;
 }
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 50px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 10%;
   margin: auto;
   padding: 1.5em 0;
   z-index: 10;
@@ -79,7 +82,6 @@ header {
   height: 45px;
   max-width: 500px;
   margin: auto;
-  margin-right: 20px;
   z-index: 10;
 }
 
