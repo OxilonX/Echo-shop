@@ -1,5 +1,6 @@
 :root {
   /*main theme*/
+  --color-darker: #011e1f;
   --color: #013132;
   --sec-color: #7cb4c1;
   --ivory: #fffff0;
@@ -47,10 +48,146 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.best-sellers {
+  padding: 50px 0;
+  background-color: var(--color);
+}
+.best-sellers-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.best-sellers-title {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--ivory);
+  font-weight: 400;
+}
+.best-sellers-description {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 600px;
+  color: var(--ivory);
+  padding-bottom: 50px;
+}
+.best-sellers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  height: auto;
+}
+.best-sellers-product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.best-sellers-product-img-container {
+  display: flex;
+  position: relative;
+}
+.best-sellers-product-img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.best-sellers-product-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 10px 15px;
+}
+.best-sellers-favourite,
+.best-sellers-buy-now {
+  cursor: pointer;
+}
+.best-sellers-favourite {
+  width: 30px;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.best-sellers-favourite:hover {
+  transform: scale(1.05);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(96%) saturate(680%)
+    hue-rotate(318deg) brightness(96%) contrast(97%);
+}
+.best-sellers-buy-now {
+  align-self: flex-end;
+  background-color: var(--color);
+  color: var(--ivory);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.best-sellers-buy-now:hover {
+  background-color: var(--sec-color);
+  color: var(--color);
+}
+.best-sellers-product:hover .best-sellers-favourite {
+  opacity: 1;
+}
+.best-sellers-product-info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ivory-darker);
+  gap: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 10px;
+}
+.best-sellers-product-category {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-darker);
+}
+.best-sellers-product-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color);
+}
+.best-sellers-product-prices-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color);
+}
+.best-sellers-product-price {
+}
+.best-sellers-product-old-price {
+  position: relative;
+  color: rgb(246, 102, 102);
+}
+
+.best-sellers-product-old-price::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background-color: rgb(247, 68, 68);
+  transform: rotate(8deg);
+}
 header {
   position: relative;
   background-color: var(--ivory);
   z-index: 10;
+  border-bottom: 1px solid var(--color);
 }
 .container {
   max-width: 1100px;
@@ -125,7 +262,6 @@ header {
   justify-content: space-between;
 
   gap: 10px;
-  cursor: pointer;
 }
 .language {
   font-size: 1.5rem;
@@ -143,6 +279,7 @@ header {
 .icons {
   position: relative;
   width: 32px;
+  cursor: pointer;
 }
 
 .circle {
@@ -294,6 +431,10 @@ header {
   grid-row: 1/1;
   grid-column: 2/3;
   min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 .product-spotlight-title h2 {
   text-align: center;
@@ -480,6 +621,7 @@ header {
   padding: 50px 0;
   max-width: 600px;
   margin: auto;
+  gap: 5px;
 }
 .why-buy-title h1 {
   text-align: center;
