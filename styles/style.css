@@ -1327,3 +1327,62 @@ header {
     font-size: clamp(0.4rem, -0.32rem + 2.56vw, 0.8rem);
   }
 }
+@media (max-width: 450px) {
+  .container {
+    max-width: 300px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .language {
+    font-size: 1rem;
+  }
+  .nav-icons-cotainer {
+    display: none;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .best-sellers-product {
+    max-width: 100%;
+    width: 100%;
+  }
+  .newsettler-signup-bg {
+    width: 250%;
+  }
+  .newsettler-signup-container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .newsettler-signup-title {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .newsettler-signup-description {
+    font-size: 0.7rem;
+  }
+  .newsettler-signup-privacy-policy {
+    font-size: 0.6rem;
+  }
+  .newsettler-signup-input {
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--ivory-darker-plus);
+    border-radius: 4px;
+    flex: 1;
+    font-size: 0.8rem;
+    max-width: 400px;
+  }
+  .benefit {
+    width: 100%;
+  }
+  .footer-sections-container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+  .footer-social-container {
+    gap: 25px;
+  }
+}
