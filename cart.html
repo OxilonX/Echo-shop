@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECHO Shop - Cart</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo-echo">ECHO</a>
+          <div class="search-bar-shop">
+            <input type="text" placeholder="Search..." />
+            <img
+              class="magnifying-glass-icon"
+              src="icons/icons8-search-30.png"
+              alt=""
+            />
+          </div>
+          <ul class="nav-icons-list">
+            <li>
+              <a title="wishlist" href="wishlist.html"
+                ><img
+                  src="icons/icons8-heart-30.png"
+                  alt="wishlist"
+                  class="nav-icon"
+              /></a>
+            </li>
+            <li>
+              <a title="cart" href="cart.html">
+                <img
+                  src="icons/icons8-cart-30.png"
+                  alt="cart"
+                  class="nav-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a title="contact us" href="contact.html">
+                <img
+                  src="icons/icons8-call-30.png"
+                  alt="Contact"
+                  class="nav-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="cart-items">
+        <h2>My Cart</h2>
+        <table class="cart-item">
+          <thead class="cart-items-head">
+            <tr>
+              <th>
+                Description
+                <img src="icons/icons8-arrow-50.png" class="sorting-arrow" />
+              </th>
+              <th>
+                Qty
+                <img src="icons/icons8-arrow-50.png" class="sorting-arrow" />
+              </th>
+              <th>
+                price
+                <img src="icons/icons8-arrow-50.png" class="sorting-arrow" />
+              </th>
+              <th>
+                remove
+                <img src="icons/icons8-arrow-50.png" class="sorting-arrow" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>
+              <div class="cart-product-description-container">
+                <img src="" alt="" class="cart-product-img" />
+                <div class="cart-product-description">
+                  <h3 class="cart-product-name"></h3>
+                  <p class="cart-product-price"></p>
+                  <span class="cart-product-id"></span>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td><p class="cart-total-price"></p></td>
+            <td>
+              <button class="remove">
+                <img src="" alt="" class="cart-remove-icon" />
+              </button>
+            </td>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- <aside class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Total: <span class="total-price">$49.98</span></p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </aside> -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 ECHO Shop. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

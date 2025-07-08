@@ -8,6 +8,7 @@
   --ivory-darker-plus: #a8a89d;
   --light-bg: #f4f4f4;
 }
+
 ul {
   list-style: none;
 }
@@ -84,6 +85,7 @@ header {
 }
 .logo {
   font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .search-bar-container {
@@ -1154,6 +1156,9 @@ header {
 }
 .logo-echo {
   font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .search-bar-shop {
@@ -1255,9 +1260,16 @@ header {
 .view-icon {
   width: 20px;
 }
+.view-icon.active {
+  filter: invert(100%);
+}
 .view-grid:hover,
 .view-list:hover {
   opacity: 0.8;
+}
+.view-grid.active,
+.view-list.active {
+  opacity: 0.6;
 }
 .sorting-options-container {
   display: flex;
@@ -1552,6 +1564,10 @@ header {
 .shop-footer-social-container svg {
   width: 22px;
   fill: var(--color);
+  cursor: pointer;
+}
+.shop-footer-social-container svg:hover {
+  fill: var(--accent-color);
 }
 .footer-privacy-item {
   position: relative;
