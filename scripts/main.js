@@ -16,6 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let cart = [];
   let i = 0;
   let r = 0;
+  const imagesToLoad = [
+    "/images/reviewer-pfp.jpg",
+    "/images/reviewer2-pfp.jpg",
+    "/images/reviewer3-pfp.jpg",
+  ];
+
+  function preloadImages(images) {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }
+
+  // Start preloading images
+  preloadImages(imagesToLoad);
   let allReviews = [
     {
       name: "Abdo J.",
@@ -46,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Handcrafted from premium beechwood, these elegant tasting spoons are perfect for sampling sauces, soups, and desserts.",
       price: "29.99",
-      path: "images/Small_Beechwood_Spoons.jpg",
+      path: "/images/Small Beechwood Spoons.jpg",
     },
     {
       id: 1,
