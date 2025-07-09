@@ -19,11 +19,11 @@
     <title>ECHO Shop - Shop</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav class="nav">
+        <div class="header-content">
           <a href="index.html" class="logo-echo">ECHO</a>
-          <div class="search-bar-shop">
+          <div class="search-bar-header">
             <input type="text" placeholder="Search..." />
             <img
               class="magnifying-glass-icon"
@@ -31,36 +31,45 @@
               alt=""
             />
           </div>
-          <ul class="nav-icons-list">
-            <li>
-              <a title="wishlist" href="wishlist.html"
-                ><img
-                  src="icons/icons8-heart-30.png"
-                  alt="wishlist"
-                  class="nav-icon"
-              /></a>
-            </li>
-            <li>
-              <a title="cart" href="cart.html">
-                <img
-                  src="icons/icons8-cart-30.png"
-                  alt="cart"
-                  class="nav-icon"
-                />
-              </a>
-            </li>
-
-            <li>
-              <a title="contact us" href="contact.html">
-                <img
-                  src="icons/icons8-call-30.png"
-                  alt="Contact"
-                  class="nav-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <ul class="nav-icons-list">
+              <li>
+                <a title="wishlist" href="wishlist.html"
+                  ><img
+                    src="icons/icons8-heart-30.png"
+                    alt="wishlist"
+                    class="nav-icon"
+                /></a>
+              </li>
+              <li>
+                <a title="cart" href="cart.html">
+                  <img
+                    src="icons/icons8-cart-30.png"
+                    alt="cart"
+                    class="nav-icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a title="contact us" href="contact.html">
+                  <img
+                    src="icons/icons8-call-30.png"
+                    alt="Contact"
+                    class="nav-icon"
+                  />
+                </a>
+              </li>
+              <div>
+                <a href="" class="hamburger-menu-icon"
+                  ><img
+                    clas="nav-icon"
+                    src="icons/icons8-hamburger-menu-30.png"
+                    alt=""
+                /></a>
+              </div>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -74,7 +83,7 @@
           <p class="current-page">shop</p>
         </div>
       </div>
-
+      <h1 class="our-products container">our products</h1>
       <section id="products">
         <div class="container">
           <div class="product-view-controls">
