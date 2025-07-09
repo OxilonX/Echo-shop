@@ -21,21 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Abdo J.",
       opinion:
         "I like my handcrafted candle, but the scent could be stronger and last longer.",
-      path: "/images/reviewer-pfp.jpeg",
+      path: "/images/reviewer-pfp.jpg",
       rating: 3,
     },
     {
       name: "Ali K.",
       opinion:
         "The lamp is stunning and fits perfectly in my living room. Highly recommend!",
-      path: "/images/reviewer2-pfp.jpeg",
+      path: "/images/reviewer2-pfp.jpg",
       rating: 5,
     },
     {
       name: "Sara M.",
       opinion:
         "The incense burner brings a wonderful scent to my space. I am very pleased with it!",
-      path: "/images/reviewer3-pfp.jpeg",
+      path: "/images/reviewer3-pfp.jpg",
       rating: 4,
     },
   ];
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Handcrafted from premium beechwood, these elegant tasting spoons are perfect for sampling sauces, soups, and desserts.",
       price: "29.99",
-      path: "/images/Small Beechwood Spoons.jpeg",
+      path: "/images/Small Beechwood Spoons.jpg",
     },
     {
       id: 1,
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Illuminate your space with this stunning hexagon table lamp, blending modern aesthetics with rustic charm.",
       price: "49.99",
-      path: "/images/Hexagon Wooden Table Lamp, Modern Rustic Light, Handmade House Living Lamp, Wood Desk Night Lighting, Wooden lamps for Housewarming.jpeg",
+      path: "/images/Hexagon Wooden Table Lamp, Modern Rustic Light, Handmade House Living Lamp, Wood Desk Night Lighting, Wooden lamps for Housewarming.jpg",
     },
     {
       id: 2,
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Experience the enchanting aroma of traditional incense with this beautifully designed Mubkhar.",
       price: "39.99",
-      path: "/images/mubkhar.jpeg",
+      path: "/images/mubkhar.jpg",
     },
     {
       id: 3,
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "Step back in time with this exquisite 1940s-inspired fedora hat.",
       price: "79.99",
-      path: "/images/Exquisite 1940s Inspired Luxury Men's Fedora  _ The Shadows - Long oval _ 22 1_4 in - 56_5 cm.jpeg",
+      path: "/images/Exquisite 1940s Inspired Luxury Men's Fedora  _ The Shadows - Long oval _ 22 1_4 in - 56_5 cm.jpg",
     },
   ];
   function runOnload() {
